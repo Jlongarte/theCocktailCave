@@ -1,0 +1,19 @@
+footer {
+  background-color: black;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 2rem;
+}
+
+footer p {
+  font-size: 10rem;
+  text-align: right;
+  color: white;
+}
+
+footer small {
+  color: white;
+}
