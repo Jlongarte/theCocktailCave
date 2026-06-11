@@ -3,9 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({
+  title,
+  subtitle,
+  imageSrc,
+  imageAlt = "Hero Image",
+  showButtons = true,
+}) => {
   const navigate = useNavigate();
-
   const imageSectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -19,27 +24,25 @@ const Hero = () => {
   return (
     <section className="hero-main-wrapper">
       <div className="hero-text-block">
-        <h1 className="hero-title">A bar in the heart of Paris</h1>
+        <h1 className="hero-title">{title}</h1>
 
-        <p className="hero-subtitle">
-          A quiet place for evening drinks and conversation.
-        </p>
+        {subtitle && <p className="hero-subtitle">{subtitle}</p>}
 
-        <div className="hero-btn-group">
-          <button
-            className="hero-btn-primary"
-            onClick={() => navigate("/contact")}
-          >
-            Book a Table
-          </button>
+        {/* Los botones solo se renderizan si showButtons es true */}
+        {showButtons && (
+          <div className="hero-btn-group">
+            <button className="btn" onClick={() => navigate("/book")}>
+              Book a Table
+            </button>
 
-          <button
-            className="hero-btn-secondary"
-            onClick={() => navigate("/menu-page")}
-          >
-            View Menu
-          </button>
-        </div>
+            <button
+              className="btn-secondary"
+              onClick={() => navigate("/menu-page")}
+            >
+              View Menu
+            </button>
+          </div>
+        )}
       </div>
 
       <div ref={imageSectionRef} className="hero-image-block">
@@ -47,11 +50,7 @@ const Hero = () => {
           style={{ opacity: imageOpacity, scale: imageScale }}
           className="hero-image-wrapper"
         >
-          <img
-            src="/Crea_una_imagen_similar_a_202606091138.jpeg"
-            alt="Cocktail Paris"
-            className="hero-display-image"
-          />
+          <img src={imageSrc} alt={imageAlt} className="hero-display-image" />
 
           <div className="hero-image-blur-overlay"></div>
         </motion.div>

@@ -30,7 +30,7 @@ const MenuPage = () => {
         <h2>Our Full Cocktail Selection</h2>
         <p>Explore our complete variety of hand-crafted drinks.</p>
 
-        <button className="view-menu-btn" onClick={handleGoBack}>
+        <button className="btn" onClick={handleGoBack}>
           Go Back Home
         </button>
       </div>

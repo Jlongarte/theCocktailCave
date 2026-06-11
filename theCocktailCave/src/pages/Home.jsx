@@ -8,7 +8,13 @@ import Footer from "../components/Footer/Footer";
 
 const Home = () => (
   <>
-    <Hero />
+    <Hero
+      title="A bar in the heart of Vitoria"
+      subtitle="A quiet place for evening drinks and conversation."
+      imageSrc="/hero-img.webp"
+      imageAlt="Cocktail Paris"
+      showButtons={true}
+    />
     <Menu />
     <About />
     <Blog />

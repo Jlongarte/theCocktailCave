@@ -38,7 +38,7 @@ const Menu = () => {
         <h2>A menu designed for long evenings</h2>
         <p>Drinks made to be enjoyed slowly.</p>
 
-        <button className="view-menu-btn" onClick={handleViewMenu}>
+        <button className="btn" onClick={handleViewMenu}>
           View Menu
         </button>
       </div>

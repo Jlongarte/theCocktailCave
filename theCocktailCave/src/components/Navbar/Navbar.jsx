@@ -56,7 +56,7 @@ const NavBar = () => {
 
             <li>
               <button
-                onClick={() => handleNavigation("/contact")}
+                onClick={() => handleNavigation("/book")}
                 className="thecocktailcave-book-link"
               >
                 Book a Table

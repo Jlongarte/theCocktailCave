@@ -37,7 +37,7 @@ const EventsPage = () => {
       <div className="menu-header">
         <h2>Evenings worth remembering</h2>
         <p>Exclusive experiences tailored for long nights.</p>
-        <button className="view-menu-btn" onClick={handleGoBack}>
+        <button className="btn" onClick={handleGoBack}>
           Go Back Home
         </button>
       </div>

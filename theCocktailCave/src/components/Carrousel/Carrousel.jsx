@@ -1,11 +1,11 @@
 import "./Carrousel.css";
 
-import img from "/carrousel.png";
-import img2 from "/carrousel2.jpg";
-import img3 from "/carrousel3.jpg";
-import img4 from "/carrousel4.jpg";
-import img5 from "/carrousel5.jpg";
-import img6 from "/carrousel6.jpg";
+import img from "/carrousel1.webp";
+import img2 from "/carrousel2.webp";
+import img3 from "/carrousel3.webp";
+import img4 from "/carrousel4.webp";
+import img5 from "/carrousel5.webp";
+import img6 from "/carrousel6.webp";
 
 const Carrousel = () => {
   const images = [img, img2, img3, img4, img5, img6];

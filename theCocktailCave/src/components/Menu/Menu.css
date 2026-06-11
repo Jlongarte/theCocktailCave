@@ -26,21 +26,6 @@
   margin-bottom: 30px;
 }
 
-.view-menu-btn {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.view-menu-btn:hover {
-  transform: scale(1.05);
-}
-
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -73,12 +58,6 @@
 
 .menu-item:hover .menu-image {
   transform: scale(1.05);
-}
-
-.item-info h3 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px 0;
-  font-weight: 500;
 }
 
 .item-info p {

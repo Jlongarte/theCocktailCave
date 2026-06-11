@@ -23,7 +23,7 @@ const About = () => {
       <div className="about-image-container">
         <motion.img
           style={{ scale: scaleImage }}
-          src="../../../public/negroni.jpeg"
+          src="/negroni.webp"
           alt="Cocktail drink"
           className="about-image"
         />
