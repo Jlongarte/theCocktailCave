@@ -15,15 +15,6 @@
   margin-bottom: 60px;
 }
 
-.about-header h2 {
-  font-family: serif;
-  font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 24px;
-  letter-spacing: -1px;
-}
-
 .about-header p {
   font-size: 1.1rem;
   opacity: 0.8;
@@ -60,4 +51,48 @@
     #000000 95%
   );
   pointer-events: none;
+}
+
+/* --- RESPONSIVE / ADAPTABILIDAD MÓVIL --- */
+
+/*  TABLETS  */
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 100px 40px;
+    gap: 50px;
+  }
+
+  .about-image-container {
+    max-width: 80%;
+    height: 450px;
+  }
+}
+
+/*  MÓVILES  */
+@media (max-width: 767px) {
+  .about-section {
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .about-header {
+    text-align: center;
+  }
+
+  .about-header br {
+    display: none;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+
+  .about-image-container {
+    max-width: 80%;
+    height: 320px;
+    border-radius: 12px;
+  }
 }

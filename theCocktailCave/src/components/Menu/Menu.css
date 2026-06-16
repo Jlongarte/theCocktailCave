@@ -1,7 +1,6 @@
 .menu-section {
   background-color: #000;
   color: #fff;
-  padding: 100px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,19 +10,6 @@
 .menu-header {
   text-align: center;
   margin-bottom: 80px;
-}
-
-.menu-header h2 {
-  font-size: 3rem;
-  font-family: serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.menu-header p {
-  opacity: 0.7;
-  font-size: 1rem;
-  margin-bottom: 30px;
 }
 
 .menu-grid {
@@ -63,4 +49,31 @@
 .item-info p {
   font-size: 0.9rem;
   opacity: 0.6;
+}
+
+/* --- RESPONSIVE / ADAPTABILIDAD MÓVIL --- */
+
+/*  TABLETS  */
+@media (max-width: 1024px) {
+  .menu-header {
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+  }
+}
+
+/*  MÓVILES  */
+
+@media (max-width: 600px) {
+  .menu-header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+  }
 }

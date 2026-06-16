@@ -15,20 +15,6 @@
   padding: 0 20px;
 }
 
-.carrousel-header h2 {
-  font-family: serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 400;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-
-.carrousel-header p {
-  opacity: 0.7;
-  font-size: 1rem;
-}
-
-/* CONTENEDOR PRINCIPAL DEL MARQUEE */
 .marquee-container {
   width: 100%;
   overflow: hidden;
@@ -36,7 +22,6 @@
   display: flex;
 }
 
-/* EL TRACK QUE SE MUEVE */
 .marquee-track {
   display: flex;
   width: calc(250px * 12 + 20px * 12);
@@ -62,13 +47,80 @@
   object-fit: cover;
 }
 
-/* KEYFRAMES: Mueve el track hacia la izquierda */
 @keyframes scroll-marquee {
   0% {
     transform: translateX(0);
   }
-
   100% {
+    /* Mueve la mitad exacta del track (6 imágenes + 6 gaps) */
     transform: translateX(calc(-250px * 6 - 20px * 6));
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERY: TABLETS (MAX 1024PX)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .carrousel-section {
+    padding: 80px 0;
+  }
+
+  .carrousel-header {
+    margin-bottom: 45px;
+  }
+
+  .marquee-track {
+    width: calc(200px * 12 + 16px * 12);
+    gap: 16px;
+    animation-duration: 30s;
+  }
+
+  .marquee-image-wrapper {
+    width: 200px;
+    height: 280px;
+    border-radius: 16px;
+  }
+
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-200px * 6 - 16px * 6));
+    }
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERY: MÓVILES (MAX 600PX)
+   ========================================================================== */
+@media (max-width: 600px) {
+  .carrousel-section {
+    padding: 60px 0;
+  }
+
+  .carrousel-header {
+    margin-bottom: 30px;
+  }
+
+  .marquee-track {
+    width: calc(150px * 12 + 12px * 12);
+    gap: 12px;
+    animation-duration: 25s;
+  }
+
+  .marquee-image-wrapper {
+    width: 150px;
+    height: 210px;
+    border-radius: 12px;
+  }
+
+  @keyframes scroll-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 6 - 12px * 6));
+    }
   }
 }

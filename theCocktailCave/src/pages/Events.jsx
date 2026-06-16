@@ -34,9 +34,11 @@ const EventsPage = () => {
 
   return (
     <section className="menu-section">
-      <div className="menu-header">
-        <h2>Evenings worth remembering</h2>
-        <p>Exclusive experiences tailored for long nights.</p>
+      <div className="hero-text-block">
+        <h1 className="hero-title">Evenings worth remembering</h1>
+        <p className="hero-subtitle">
+          Exclusive experiences tailored for long nights.
+        </p>
         <button className="btn" onClick={handleGoBack}>
           Go Back Home
         </button>

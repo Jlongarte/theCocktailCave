@@ -26,9 +26,11 @@ const MenuPage = () => {
 
   return (
     <section className="menu-section">
-      <div className="menu-header">
-        <h2>Our Full Cocktail Selection</h2>
-        <p>Explore our complete variety of hand-crafted drinks.</p>
+      <div className="hero-text-block">
+        <h1 className="hero-title">Our Full Cocktail Selection</h1>
+        <p className="hero-subtitle">
+          Explore our complete variety of hand-crafted drinks.
+        </p>
 
         <button className="btn" onClick={handleGoBack}>
           Go Back Home

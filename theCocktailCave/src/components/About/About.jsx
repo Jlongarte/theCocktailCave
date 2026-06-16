@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="about-section">
       <div className="about-header">
-        <motion.h2 style={{ opacity: opacityText }} className="about-title">
+        <motion.h2 style={{ opacity: opacityText }}>
           Shaped by time <br /> slowly since 1990
         </motion.h2>
 

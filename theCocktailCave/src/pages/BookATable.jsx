@@ -47,7 +47,7 @@ const BookATable = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="reservation-title">Make a reservation</h1>
+            <h1 className="hero-title">Make a reservation</h1>
 
             <form onSubmit={handleSubmit} className="reservation-form">
               <div className="form-group">

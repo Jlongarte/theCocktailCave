@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>The.Cocktail.Cave</p>
+      <h6>The.Cocktail.Cave</h6>
       <small>© {currentYear} The Cocktail Cave. All rights reserved.</small>
     </footer>
   );

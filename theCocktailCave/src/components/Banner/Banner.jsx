@@ -11,7 +11,7 @@ const Banner = () => {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          A place to slow <br /> down together
+          A place to slow down together
         </motion.h2>
 
         <motion.p

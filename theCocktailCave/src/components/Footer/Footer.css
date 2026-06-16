@@ -5,15 +5,60 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-right: 2rem;
+  padding: 80px 2rem;
 }
 
-footer p {
-  font-size: 10rem;
-  text-align: right;
+footer h6 {
+  font-size: clamp(5rem, 10vw, 10rem);
+  text-align: center;
   color: white;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  line-height: 1;
+  letter-spacing: -2px;
+  width: 100%;
 }
 
 footer small {
   color: white;
+  opacity: 0.6;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   MEDIA QUERY: TABLETS (MAX 1024PX)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  footer {
+    padding: 60px 1.5rem;
+  }
+
+  footer h6 {
+    font-size: clamp(4rem, 8vw, 6.5rem);
+    margin-bottom: 30px;
+  }
+}
+
+/* ==========================================================================
+   MEDIA QUERY: MÓVILES (MAX 600PX)
+   ========================================================================== */
+@media (max-width: 600px) {
+  footer {
+    padding: 45px 1rem;
+    padding-right: 1rem;
+  }
+
+  footer h6 {
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+    word-break: break-word;
+  }
+
+  footer small {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }
