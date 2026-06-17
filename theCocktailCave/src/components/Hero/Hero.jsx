@@ -28,7 +28,6 @@ const Hero = ({
 
         {subtitle && <p className="hero-subtitle">{subtitle}</p>}
 
-        {/* Los botones solo se renderizan si showButtons es true */}
         {showButtons && (
           <div className="hero-btn-group">
             <button className="btn" onClick={() => navigate("/book")}>

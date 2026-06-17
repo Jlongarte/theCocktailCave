@@ -27,7 +27,7 @@ const Contact = () => {
         title="Contact Us"
         subtitle="General inquiries and details."
         imageSrc="/second-hero.webp"
-        imageAlt="Afterhours bar facade"
+        imageAlt="The Cocktail Cave - Contact"
         showButtons={false}
       />
 
@@ -44,11 +44,11 @@ const Contact = () => {
           <motion.div
             className="info-card"
             variants={cardVariants}
-            whileHover={{ y: -6, scale: 1.02 }} // Sutil elevación al pasar el cursor
+            whileHover={{ y: -6, scale: 1.02 }}
           >
             <h3>Address</h3>
-            <p>12 Rue Saint-Martin</p>
-            <p>Central Paris, 75004</p>
+            <p>The Swan Lane</p>
+            <p>Dublin, Ireland</p>
           </motion.div>
 
           <motion.div
@@ -67,8 +67,8 @@ const Contact = () => {
             whileHover={{ y: -6, scale: 1.02 }}
           >
             <h3>Contact</h3>
-            <p>+33 1 45 67 89 01</p>
-            <p className="contact-email">hello@afterhouse.com</p>
+            <p>+353 1 234 5678</p>
+            <p className="contact-email">hello@cocktailcave.com</p>
           </motion.div>
 
           <motion.div

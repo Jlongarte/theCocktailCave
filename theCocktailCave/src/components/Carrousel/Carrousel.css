@@ -52,7 +52,6 @@
     transform: translateX(0);
   }
   100% {
-    /* Mueve la mitad exacta del track (6 imágenes + 6 gaps) */
     transform: translateX(calc(-250px * 6 - 20px * 6));
   }
 }

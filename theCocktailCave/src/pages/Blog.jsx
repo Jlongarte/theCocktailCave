@@ -25,7 +25,6 @@ const Blog = () => {
   return (
     <section className="blog-section">
       <div className="blog-container">
-        {/* COLUMNA IZQUIERDA */}
         <div className="blog-sidebar">
           <h2 className="blog-main-title">News</h2>
           <p className="blog-main-subtitle">
@@ -52,13 +51,11 @@ const Blog = () => {
                       <p className="blog-post-desc">{post.description}</p>
                     </div>
 
-                    {/* El icono solo se mostrará en versión móvil por CSS */}
                     <span className="blog-accordion-icon">
                       {isAccordionOpen ? "✕" : "＋"}
                     </span>
                   </button>
 
-                  {/* CONTENIDO ACORDEÓN DESPLEGABLE */}
                   <AnimatePresence initial={false}>
                     {isAccordionOpen && (
                       <motion.div
@@ -80,7 +77,6 @@ const Blog = () => {
           </div>
         </div>
 
-        {/* COLUMNA DERECHA: Visor Fijo Editorial */}
         <div className="blog-content-viewer">
           {selectedPost ? (
             <article className="blog-article-reader">

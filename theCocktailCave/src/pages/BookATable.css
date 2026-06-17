@@ -70,7 +70,6 @@
     background-color 0.3s ease;
 }
 
-/* Marcadores de posición elegantes */
 .reservation-form input::placeholder,
 .reservation-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.35);
@@ -140,9 +139,7 @@
   transform: scale(1.01);
 }
 
-/* ==========================================================================
-   ESTILOS PANTALLA DE ÉXITO 
-   ========================================================================== */
+/* ESTILOS PANTALLA DE ÉXITO  */
 
 .reservation-success-container {
   text-align: center;
@@ -191,7 +188,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-/* --- AJUSTE RESPONSIVE MÓVIL --- */
+/* --- RESPONSIVE MÓVIL --- */
 @media (max-width: 480px) {
   .form-row {
     grid-template-columns: 1fr;

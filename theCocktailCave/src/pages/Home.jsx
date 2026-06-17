@@ -9,10 +9,10 @@ import Footer from "../components/Footer/Footer";
 const Home = () => (
   <>
     <Hero
-      title="A bar in the heart of Vitoria"
+      title="A bar in the heart of Dublin"
       subtitle="A quiet place for evening drinks and conversation."
       imageSrc="/hero-img.webp"
-      imageAlt="Cocktail Paris"
+      imageAlt="Cocktail Dublin"
       showButtons={true}
     />
     <Menu />

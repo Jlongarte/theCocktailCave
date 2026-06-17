@@ -1,4 +1,3 @@
-/* About.css */
 .about-section {
   background-color: #000;
   color: #fff;
@@ -67,6 +66,10 @@
     max-width: 80%;
     height: 450px;
   }
+
+  .about-image {
+    height: 100%;
+  }
 }
 
 /*  MÓVILES  */
@@ -94,5 +97,8 @@
     max-width: 80%;
     height: 320px;
     border-radius: 12px;
+  }
+  .about-image {
+    height: 100%;
   }
 }
