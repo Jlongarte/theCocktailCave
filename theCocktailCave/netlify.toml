@@ -1,11 +1,9 @@
-# 1. Regla para la API (Proxy de producción)
-[[redirects]]
-  from = "/api-cocktails/*"
-  to = "https://cocktailsapi-9qny.onrender.com/:splat"
-  status = 200
-  force = true
+# Aseguramos que los comandos de Netlify sean los estándar de Vite
+[build]
+  command = "npm run build"
+  publish = "dist"
 
-# 2. Regla para React Router (Evitar el 404 al refrescar las páginas)
+# Redirección obligatoria para React Router (Evita el error 404 al refrescar)
 [[redirects]]
   from = "/*"
   to = "/index.html"
