@@ -2,7 +2,7 @@
 
 A premium, minimalist web application built for **the Cocktail Cave**, a sophisticated cocktail bar concept based in the heart of Dublin. The project features a dark cinematic aesthetic, real-time data fetching, seamless multi-page transitions, and complex responsive layouts.
 
-Live Demo: *[Insert your Vercel/Netlify deployment link here]*
+Live Demo: https://thecocktailcave.netlify.app/
 Backend API: https://cocktailsapi-9qny.onrender.com/
 
 ---
