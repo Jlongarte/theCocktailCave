@@ -8,8 +8,15 @@ const MenuPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api-cocktails")
-      .then((response) => response.json())
+    const API_BASE = import.meta.env.VITE_API_URL || "/api-cocktails";
+
+    fetch(`${API_BASE}/`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         setDrinks(data);
         setLoading(false);
