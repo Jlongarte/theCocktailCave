@@ -1,0 +1,12 @@
+# 1. Regla para la API (Proxy de producción)
+[[redirects]]
+  from = "/api-cocktails/*"
+  to = "https://cocktailsapi-9qny.onrender.com/:splat"
+  status = 200
+  force = true
+
+# 2. Regla para React Router (Evitar el 404 al refrescar las páginas)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
